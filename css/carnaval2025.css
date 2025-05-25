@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+/*TAMANO IMAGENES*/
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*CONTENIDO GENERAL*/
+.container {
+    max-width: none;
+    margin: 0 20px 20px 0;
+}
+
+/*ENCABEZADO(HEADER)*/
+.header-carnaval-2025 {
+    margin: 0; 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    min-height: 90vh;
+    padding: 50px 0; 
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-image: url('../images/abuelo.jpg'); 
+    width: 100%;
+    max-width: 100vw;
+}
+
+.header-carnaval-2025 h1{
+    font-size: 50px;
+    color: #005f99;
+    background: rgba(228, 222, 222, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/*MENÚ*/
+.menu {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: rgba(241, 225, 225, 0.8);
+    position: fixed; 
+    width: 100%; 
+    top: 0;
+    left: 0;
+    padding: 20px 40px;
+    margin-top: auto;
+    z-index: 100;
+    flex-wrap: wrap;
+    max-width: 100vw;
+
+}
+
+.menu-toggle {
+    display: none;
+}
+  
+/* para el menú oculto en móvil */
+.navbar {
+    display: flex;
+}  
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.idioma {
+    position: sticky; 
+    top: 200px; 
+    right: 20px;
+    z-index: 98;
+}
+
+.idioma select {
+    padding: 8px ;
+    font-size: 16px;
+    border: 2px solid #f4a900; 
+    border-radius: 5px; 
+    background-color: white; 
+    color: #000000; 
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.idioma select:hover {
+    background-color: #f4a900; 
+}
+
+.desktop-only {
+    display: block;
+}
+  
+/* para ocultar en móvil */
+.mobile-only {
+    display: none;
+}
+
+.logo {
+    color: #f4a900;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    color: black;
+    font-size: 20px;
+    padding: 15px;
+    font-weight: 600;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu .navbar ul li a:hover {
+    color: #f4a900;
+}
+.pagina-carnaval2025 .menu a[href="Carnaval2025.html"]{
+    color: #005f99;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu .container{
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 48px;
+    color: #f4a900;
+}
+
+/*SECCION FOTOS*/
+.seccion-img {
+    position: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/fondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenido {
+    position: relative;
+    text-align: center;
+    padding: 50px;
+    z-index: 1;
+    width: 100%;
+}
+
+.contenido p{
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.contenido h1{
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    gap: 50px;
+    margin: auto;
+    max-width: 1100px;
+    padding: 50px;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+/*PIE DE PÁGINA (FOOTER)*/
+
+.pie-pagina{
+    width: 100%;
+    background-color: #005f99;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 40px;
+    text-align: center;
+    transition: all 300ms ease;
+    color: #f4a900;
+    
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: white;
+}
+.pie-pagina .grupo-2{
+    background-color: #005f99;
+    padding: 15px 10px;
+    text-align: center;
+    color: #ffffff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+/*MEDIA QUERIES*/
+/* 480px - 869px (tablets y celulares horizontales) */
+@media screen and (max-width: 869px) {
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 15px 20px;
+    }
+
+    .header-carnaval-2025{
+        min-height: 70vh;
+    }
+
+    .logo{
+        order: 1;
+    }
+
+    .menu-icon {
+        display: block;
+        order: 2;
+    }
+
+    .menu .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-toggle:checked + .menu-icon + .navbar {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        background-color: white;
+        position:fixed;
+        top: 60px;
+        left: 0px;
+        padding: 0px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+        z-index: 99;
+    }
+    
+    .navbar ul li{
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .idioma {
+        position: static;
+        margin: 10px auto;
+        order: 3;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+    
+    .mobile-only {
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .header-content {
+        padding-top: 80px;
+    }
+
+    .header-carnaval-2025 h1,
+    .contenido h1 {
+        font-size: 40px;
+    }
+
+    .contenido p {
+        font-size: 16px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 80px;
+    }
+
+    .pie-pagina .grupo-1 {
+        grid-template-columns: 1fr;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .menu-icon img {
+        width: 35px;
+        height: auto;
+    }
+    
+}
+
+/* 320px - 479px (celulares en vertical)*/
+@media screen and (max-width: 479px) {
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        background-color: white;
+        position:fixed;
+        top: 60px;
+        left: 0px;
+        padding: 0px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+        z-index: 99;
+    }
+
+    .navbar ul li{
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .header-carnaval-2025 {
+        padding: 30px 0;
+        min-height: 40vh;
+    }
+
+    .header-carnaval-2025 h1,
+    .contenido h1 {
+        font-size: 24px;
+    }
+
+    .contenido p {
+        font-size: 14px;
+    }
+
+    .idioma{
+        top: auto;
+        left: auto;
+        right: 10px;
+        bottom: 20px;
+    }
+
+    .galeria {
+        padding: 50px;
+    }
+
+    .pie-pagina .grupo-1 {
+        grid-template-columns: 1fr;
+    }
+    
+    .menu-icon img {
+        width: 35px;
+        height: auto;
+    }
+    
+}

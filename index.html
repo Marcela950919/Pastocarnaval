@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasto y sus Carnavales</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="menu container">
+            <a href="index.html" class="logo">Logo</a>
+    
+            <!-- Menú hamburguesa -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
+            <label for="menu-toggle" class="menu-icon">
+                <img src="images/menu.png" alt="Menú" />
+            </label>
+    
+            <!-- Menú de navegación -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Tradición</a></li>
+                    <li><a href="#">Colectivos Coreográficos</a></li>
+                    <li><a href="Carnaval2025.html">Carnaval 2025</a></li>
+                    <li><a href="#">Noticias</a></li>
+                </ul>
+    
+                <!-- Idioma solo visible en móvil -->
+                <div class="idioma mobile-only">
+                    <select id="language-selector-mobile">
+                        <option value="es">Español</option>
+                        <option value="en">Inglés</option>
+                    </select>
+                </div>
+            </nav>
+    
+            <!-- Idioma visible solo en desktop -->
+            <div class="idioma desktop-only">
+                <select id="language-selector-desktop">
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                </select>
+            </div>
+        </div>
+    </header>    
+
+    <!--Saludo-->
+    <h1 id="saludo" class="saludo"></h1>
+
+    <!-- Seccion informacion -->
+    <section class="carnaval-info">
+        <div class="info-texto">
+            <h2>El Carnaval de <span class="blancos">Blancos</span> y <span class="negros">Negros</span> llega a <span class="bogota">Bogotá</span></h2>
+        </div>
+        <a href="#" class="btn-enterate-mas-aqui">Enterate mas aquí</a>
+    </section>    
+
+    <!-- Seccion programacion -->
+    <section class="programacion">
+        <h2>Programación</h2>
+        <div class="programacion-container">
+            <button class="prev">&#10094;</button>
+            <div class="programacion-content">
+                <div class="programacion-1">
+                    <img src="Images/g1.jpg" alt="Evento 28 de diciembre">
+                </div>
+                <div class="programacion-1">
+                    <img src="images/g2.jpg" alt="Evento 31 de diciembre">
+                </div>
+                <div class="programacion-1">
+                    <img src="images/g3.jpg" alt="Evento 2 de enero">
+                </div>
+                <div class="programacion-1">
+                    <img src="images/g4.jpg" alt="Evento 3 de enero">
+                </div>
+                <div class="programacion-1">
+                    <img src="images/g5.jpg" alt="Evento 4 de enero">
+                </div>
+                <div class="programacion-1">
+                    <img src="images/g6.jpg" alt="Evento 5 de enero">
+                </div>
+            </div>
+            <button class="next">&#10095;</button>
+        </div>
+        <div class="dots-container"></div>
+    </section>   
+    <!-- seccion diccionario -->
+    <section class="diccionario">
+        <div class="diccionario-container">
+            <div>
+                <h2>Mucho se habla sobre el acento o las palabras pastusas o nariñences, venga y conozca un poco...</h2>
+            </div>
+            <div>            
+                <h1>BÁMBARO</h1>
+                <p>Persona que falta a los mandamientos del carnaval. como cuando echan talco a los ojos.</p>
+                <h1><span class="a-los-ojos-no-bambaro">¡A LOS OJOS NO, BÁMBARO!</span>
+            </div>
+
+            <div>            
+                <h1>CHICHAY</h1>
+                <p>Expresión para manifestar frio</p>
+            </div>
+
+            <div>            
+                <h1>CALLÁ, CALLÁ</h1>
+                <p>Expresión que se utiliza para decir que no diga más. Como cuando dicen que Pasto no tiene el mejor carnaval.</p>
+                <h1><span class="calla-calla-vas-hablar-bambaro">¡CALLÁ, CALLÁ VAS HABLAR BÁMBARO!</span>
+            </div>
+            <a href="#" class="btn-conocer-mas">Conocer más</a>
+        </div>
+        
+        <div class="diccionario-content">
+            <img src="Images/images.jpeg" alt="imagen diccionario pastuso">
+
+        </div>
+    </section>
+
+    <!-- cuenta regresiva -->
+    <section class="cuenta-regresiva">
+        <div class="titulo-cuenta">
+            <h2>Cada segundo cuenta!</h2>
+            <p>Para nuestro carnaval 2026 faltan...</p>
+        </div>
+        
+        <div class="contenedor-tiempo">
+            <div class="tiempo">
+                <span id="dias">00</span>
+                <p>Días</p>
+            </div>
+            <div class="tiempo">
+                <span id="horas">00</span>
+                <p>Horas</p>
+            </div>
+            <div class="tiempo">
+                <span id="minutos">00</span>
+                <p>Minutos</p>
+            </div>
+            <div class="tiempo">
+                <span id="segundos">00</span>
+                <p>Segundos</p>
+            </div>
+        </div>
+    </section>    
+    
+    <!-- seccion boletin -->
+    <section class="contact container">
+        <div class="contact-content">
+            <h3>Suscríbete al boletín del Carnaval</h3>
+            <form>
+                <input type="nombre" placeholder="Escribe tu Nombre">
+                <input type="email" placeholder="Escribe tu Correo electrónico">
+                <input type="submit" class="btn-3" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="index.html" class="logo">Logo</a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2025 <b>AMENRIQUEZF - UNAD</b> - Todos los Derechos Reservados.</small>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+
+</body>
+</html>
