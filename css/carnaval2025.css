@@ -41,7 +41,7 @@ img {
     justify-content: center;
     text-align: center;
     position: relative;
-    background-image: url('./Images/abuelo.jpg'); 
+    background-image: url('../Images/abuelo.jpg'); 
     width: 100%;
     max-width: 100vw;
 }
